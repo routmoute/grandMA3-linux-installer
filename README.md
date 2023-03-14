@@ -18,7 +18,7 @@ Only works in root for now, sorry.
 - Clone this repository
 - Download grandMA3 v1.8.8.2 console software (https://www.malighting.com/downloads/products/grandma3/)
 - Start `sudo ./installScript.sh`
-- You can start gma3 with `sudo gma3`
+- You can start gma3 with `gma3` command
 
 ## Add GNOME Launcher icon
 
