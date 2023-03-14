@@ -12,8 +12,9 @@ xmllint -xpath '//GMA3/ReleaseFile/MAPacket[not(contains(@Type, "sys")) and not(
 
 chmod +x /root/MALightingTechnology/gma3_${VERSION}/shared/resource/software/connections.sh
 
-echo "/root/MALightingTechnology/gma3_${VERSION}/console/bin/app_gma3 HOSTTYPE=onPC" > /root/gma3
-chmod +x /root/gma3
+echo "#!/bin/sh
+sudo /root/MALightingTechnology/gma3_${VERSION}/console/bin/app_gma3 HOSTTYPE=onPC" > /usr/bin/gma3
+chmod +x /usr/bin/gma3
 
 ### Add libraries ###
 cd ../../libs
