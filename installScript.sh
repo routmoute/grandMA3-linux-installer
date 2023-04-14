@@ -1,7 +1,6 @@
 #!/bin/sh
 set -e
-VERSION=1.8.8
-FULLVERSION=1.8.8.2
+. version.sh
 
 unzip grandMA3_stick_v${FULLVERSION}.zip -d grandMA3_stick_v${FULLVERSION}
 
@@ -13,8 +12,8 @@ xmllint -xpath '//GMA3/ReleaseFile/MAPacket[not(contains(@Type, "sys")) and not(
 chmod +x /root/MALightingTechnology/gma3_${VERSION}/shared/resource/software/connections.sh
 
 echo "#!/bin/sh
-sudo /root/MALightingTechnology/gma3_${VERSION}/console/bin/app_gma3 HOSTTYPE=onPC" > /usr/bin/gma3
-chmod +x /usr/bin/gma3
+sudo /root/MALightingTechnology/gma3_${VERSION}/console/bin/app_gma3 HOSTTYPE=onPC" > /usr/bin/gma3_${VERSION}
+chmod +x /usr/bin/gma3_${VERSION}
 
 ### Add libraries ###
 cd ../../libs

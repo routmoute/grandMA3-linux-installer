@@ -1,10 +1,16 @@
-mkdir /usr/share/gma3
-cp gma3.ico /usr/share/gma3/gma3.ico
+#!/bin/sh
+set -e
+. version.sh
+
+if [ ! -f /usr/share/gma3/gma3.ico ]
+    mkdir /usr/share/gma3
+    cp gma3.ico /usr/share/gma3/gma3.ico
+fi
 
 echo "[Desktop Entry]
 Type=Application
 Terminal=true
-Name=GrandMA3
+Name=GrandMA3_${VERSION}
 Icon=/usr/share/gma3/gma3.ico
-Exec=/usr/bin/gma3
-" > /usr/share/applications/gma3.desktop
+Exec=/usr/bin/gma3_${VERSION}
+" > /usr/share/applications/gma3_${VERSION}.desktop
