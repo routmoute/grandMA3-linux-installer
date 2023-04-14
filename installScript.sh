@@ -1,6 +1,6 @@
 #!/bin/sh
 set -e
-. version.sh
+. ./version
 
 unzip grandMA3_stick_v${FULLVERSION}.zip -d grandMA3_stick_v${FULLVERSION}
 

@@ -1,6 +1,6 @@
 #!/bin/sh
 set -e
-. version.sh
+. ./version
 
 if [ ! -f /usr/share/gma3/gma3.ico ]
     mkdir /usr/share/gma3
