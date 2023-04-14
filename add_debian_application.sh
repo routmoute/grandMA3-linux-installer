@@ -3,6 +3,7 @@ set -e
 . ./version
 
 if [ ! -f /usr/share/gma3/gma3.ico ]
+then
     mkdir /usr/share/gma3
     cp gma3.ico /usr/share/gma3/gma3.ico
 fi
