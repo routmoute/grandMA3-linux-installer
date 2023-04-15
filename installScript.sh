@@ -24,3 +24,4 @@ cd ../../libs
 # fix web_daemon missing library
 #cp libprocps.so.7 /root/MALightingTechnology/gma3_${VERSION}/console/bin/web_daemon/.
 cp libstdc++.so.6 /root/MALightingTechnology/gma3_${VERSION}/console/bin/.
+cp libc.so.6 /root/MALightingTechnology/gma3_${VERSION}/console/bin/.
