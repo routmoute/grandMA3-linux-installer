@@ -5,17 +5,23 @@ set -e
 echo "Delete GrandMa3 v$VERSION ? (y/n)"
 read yesorno
 
-if [ $yesorno = "y" ]
+if [ ! -z "$yesorno" ]
 then
-    rm -r /root/MALightingTechnology/gma3_$VERSION
-    echo "GrandMA3 v$VERSION Deleted"
+    if [ $yesorno = "y" ]
+    then
+        rm -r /root/MALightingTechnology/gma3_$VERSION
+        echo "GrandMA3 v$VERSION Deleted"
+    fi
 fi
 
 echo "Delete All GrandMA3 versions and saves ? (y/n)"
 read yesorno
 
-if [ $yesorno = "y" ]
+if [ ! -z "$yesorno" ]
 then
-    rm -r /root/MALightingTechnology
-    echo "MALightingTechnology folder Deleted"
+    if [ $yesorno = "y" ]
+    then
+        rm -r /root/MALightingTechnology
+        echo "MALightingTechnology folder Deleted"
+    fi
 fi
