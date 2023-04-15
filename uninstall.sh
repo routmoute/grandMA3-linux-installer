@@ -1,6 +1,6 @@
 #!/bin/sh
 set -e
-VERSION=1.9.2
+. ./version
 
 echo "Delete GrandMa3 v$VERSION ? (y/n)"
 read yesorno

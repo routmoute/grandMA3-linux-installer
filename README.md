@@ -20,6 +20,12 @@ Only works in root for now, sorry.
 - Start `sudo ./installScript.sh`
 - You can start gma3 with `gma3_1.9.2` command
 
+## Fix missing libs or wrong version
+
+The simple solution is to upgrade to debian sid.
+
+gma3_1.9.2 need gcc >= 11 and glibc >= 2.34
+
 ## Add GNOME Launcher icon
 
 - Start `sudo ./add_debian_application.sh`
