@@ -1,5 +1,4 @@
 #!/bin/sh
-set -e
 . ./version
 
 echo "Delete GrandMa3 v$VERSION ? (y/n)"
