@@ -11,6 +11,7 @@ then
     then
         rm -r /root/MALightingTechnology/gma3_$VERSION
         rm /usr/bin/gma3_$VERSION
+        rm /usr/share/applications/gma3_$VERSION.desktop
         echo "GrandMA3 v$VERSION Deleted"
     fi
 fi
@@ -24,6 +25,7 @@ then
     then
         rm -r /root/MALightingTechnology
         rm /usr/bin/gma3*
+        rm /usr/share/applications/gma3*
         echo "MALightingTechnology folder Deleted"
     fi
 fi
