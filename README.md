@@ -1,4 +1,4 @@
-Only tested on Debian 11
+Only tested on Debian 12
 
 ## Requirements
 #### update your packages:
@@ -19,12 +19,6 @@ Only works in root for now, sorry.
 - Download grandMA3 v1.9.2.2 console software (https://www.malighting.com/downloads/products/grandma3/)
 - Start `sudo ./installScript.sh`
 - You can start gma3 with `gma3_1.9.2` command
-
-## Fix missing libs or wrong version
-
-The simple solution is to upgrade to debian sid.
-
-gma3_1.9.2 need gcc >= 11 and glibc >= 2.34
 
 ## Add GNOME Launcher icon
 
