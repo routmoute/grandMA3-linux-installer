@@ -12,5 +12,5 @@ xmllint -xpath '//GMA3/ReleaseFile/MAPacket[not(contains(@Type, "sys")) and not(
 
 ### Add gma3_version exec ###
 echo "#!/bin/sh
-sudo /root/MALightingTechnology/gma3_$VERSION/console/bin/app_gma3 HOSTTYPE=onPC" > /usr/bin/gma3_${VERSION}
+sudo LD_LIBRARY_PATH=/root/MALightingTechnology/gma3_$VERSION/shared/third_party /root/MALightingTechnology/gma3_$VERSION/console/bin/app_gma3 HOSTTYPE=onPC" > /usr/bin/gma3_${VERSION}
 chmod +x /usr/bin/gma3_${VERSION}
