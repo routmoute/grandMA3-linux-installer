@@ -16,9 +16,9 @@ apt install unzip libxml2-utils sudo
 Only works in root for now, sorry.
 
 - Clone this repository
-- Download grandMA3 v1.9.3.3 console software (https://www.malighting.com/downloads/products/grandma3/)
+- Download grandMA3 v1.9.7.0 console software (https://www.malighting.com/downloads/products/grandma3/)
 - Start `sudo ./installScript.sh`
-- You can start gma3 with `gma3_1.9.3` command
+- You can start gma3 with `gma3_1.9.7` command
 
 ## Add GNOME Launcher icon
 
