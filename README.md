@@ -1,12 +1,15 @@
 Only tested on Debian 12
 
 ## Requirements
-#### update your packages:
+
+#### Check hardware requirements: https://help2.malighting.com/Page/grandMA3/onpc_system_requirements/en/
+
+#### Update your packages:
 ```
 apt update && apt upgrade
 ```
 
-#### install required packages:
+#### Install required packages:
 ```
 apt install unzip libxml2-utils sudo
 ```
