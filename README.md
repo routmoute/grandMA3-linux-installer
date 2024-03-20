@@ -31,6 +31,18 @@ Only works in root for now, sorry.
 
 You can delete repository folder
 
+## Fix libprocps.so.8 (web_daemon not working)
+
+### Download libprocps8 debian package
+```
+wget http://ftp.de.debian.org/debian/pool/main/p/procps/libprocps8_3.3.17-5_amd64.deb
+```
+
+### install it
+```
+dpkg -i libprocps8_3.3.17-5_amd64.deb
+```
+
 ## Thanks
 
 Thanks to johnsudaar and audiofanzine forum:
